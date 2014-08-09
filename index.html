@@ -14,22 +14,8 @@
 	<meta name="twitter:site" content="@roshan_wu">
 	<meta name="twitter:creator" content="@roshan_wu">
 	<meta name="twitter:domain" content="lab.roshanca.com">
-	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/roshanca/kh-demo-mobile/gh-pages/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/roshanca/khapp/gh-pages/favicon.ico">
 	<link rel="stylesheet" href="app.css">
-	<script>
-	function loadSync(u,p,a){
-		if(!p && location.port)return {onload: null};
-		if(/\.js$/.test(u)){a='script'}else{a='link'};
-		var d=document,s=d.createElement(a),f=d.getElementsByTagName(a)[0];
-		if(a=='link'){s.href=u,s.rel='stylesheet'}else{s.src=u,s.async=true}
-		f.parentNode.insertBefore(s,f);return s;
-	}
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-15720258-1']);
-	_gaq.push(['_trackPageview']);
-	_gaq.push(['_trackPageLoadTime']);
-	loadSync('//ssl.google-analytics.com/ga.js');
-	</script>
 </head>
 <body>
 	<a class="fork" href="https://github.com/roshanca/kh-demo-mobile"></a>
@@ -39,12 +25,22 @@
 			<div class="title">A online account opening system app for investors, made with <a href="http://www.idangero.us/framework7/" target="_blank">Framework7</a></div>
 			<div class="buttons">
 				<a href="https://github.com/roshanca/kh-demo-mobile/archive/master.zip">Download</a>
-				<a href="http://khapp.coding.io" target="_blank">Fullscreen</a>
+				<a href="http://lab.roshanca.com/kh-demo-mobile/" target="_blank">Fullscreen</a>
 			</div>
 		</div>
 		<div class="phone">
-			<iframe src="http://khapp.coding.io" frameborder="0" scrolling="no"></iframe>
+			<iframe src="http://lab.roshanca.com/kh-demo-mobile/" frameborder="0" scrolling="no"></iframe>
 		</div>
 	</div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53666026-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
